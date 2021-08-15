@@ -382,9 +382,25 @@
                         <a class="footer-link-item" href="#">
                             <svg class="footer-icon-object" height="20px" width="20px">
                                 <use href="./images/sprite.svg#icon-linkedin"></use>
-                            </svg></a>
+                            </svg></a>                            
                     </li>
-                </ul>             
+                </ul>                             
+            </div>
+            <div class="e-mail-box">
+                <label for="mail" class="social-title">Подпишитесь на рассылку</label>
+                <ul class="email">
+                    <li class="item-mail">
+                        <input type="email" name="mail" placeholder="E-Mail" id="mail" class="e-mail-box">
+                    </li>
+                    <li class="item-mail">
+                        <button type="submit">Подписаться
+                            <svg class="icon-send">
+                                <use href="./images/icons.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+                 
             </div>
         </div>        
     </footer>
@@ -395,6 +411,45 @@
                     <use href="./images/sprite.svg#icon-close-black-18dp-2-1"></use>
                 </svg>
             </button>
+            <h5 class="modal-title">Оставьте свои данные, мы вам перезвоним</h5>
+            <form class="form">
+                <div class="form-group">
+                    <label for="name">Имя</label>                     
+                    <input type="text" name="name" id="name">
+                    <svg class="form-icon">
+                        <use href="./images/icons.svg#icon-person"></use>
+                    </svg>
+                </div>
+                <div class="form-group">
+                    <label for="tel">Телефон</label>
+                    <input type="tel" name="tel" id="tel">
+                    <svg class="form-icon">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
+                <div class="form-group">
+                    <label for="mail">Почта</label>
+                    <input type="email" name="mail" id="mail">
+                    <svg class="form-icon">
+                        <use href="./images/icons.svg#icon-email"></use>
+                    </svg>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Комментарий</label>
+                    <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+                </div>
+                <div class="form-checkbox">
+                   <!-- <svg class="checkbox-icon">
+                        <use href="./images/icons.svg#icon-check"></use>
+                    </svg>-->
+                    <input class="checkbox" type="checkbox" name="policy" id="policy">
+                    <label for="polisy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                </div>
+                <div class="form-btn">
+                    <button type="submit" class="btn-send">Отправить</button>
+                </div>
+            </form>
+
         </div>
     </div>
     <script src="./js/modal.js"></script>
