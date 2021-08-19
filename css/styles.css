@@ -603,20 +603,32 @@ input:focus {
   color: var(--primary-text-color);
 }
 .form-checkbox {
-  margin: 20px 50px 50px 30px;
+  margin: 20px 0 30px 12px;
 }
 .form-checkbox label {
+  display: inline-block;
   font-size: 14px;
   line-height: 1.8;
   color: var(--primary-text-color);
-}
-.checkbox-icon {
-  fill: #188ce8;
+  letter-spacing: 0.03em;
 }
 .checkbox {
-  --webkit-appearance: none;
-  --moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
+  position: absolute;
+}
+.policy::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  background-image: url(../images/Vector.svg);
+  background-size: contain;
+}
+.checkbox:checked + .policy::before {
+  background-image: url(../images/iconcheck.svg);
 }
 .form-btn {
   display: flex;
