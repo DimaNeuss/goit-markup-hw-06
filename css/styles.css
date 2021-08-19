@@ -205,9 +205,10 @@ ul {
 
 .footer-box {
   display: flex;
+  align-items: center;
 }
 .social {
-  margin: 20px 0 0 70px;
+  margin: auto;
 }
 .social-title {
   margin-bottom: 20px;
@@ -246,7 +247,7 @@ ul {
   fill: var(--fill-icon);
 }
 .e-mail-box {
-  margin: 20px 0 0 70px;
+  margin: auto;
 }
 .email {
   display: flex;
@@ -255,7 +256,7 @@ ul {
 .e-mail-box label {
   padding: 0;
   height: 16px;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -264,33 +265,29 @@ ul {
 }
 .e-mail-box input {
   margin-left: 0;
+  margin-top: 20px;
   padding: 8px;
   display: flex;
   width: 358px;
   height: 50px;
+  color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  background: transparent;
 }
 
 .e-mail-box button {
   margin-top: 20px;
   margin-left: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  color: var(--whitе-color-text);
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 .icon-send {
   margin-left: 10px;
   width: 24px;
   height: 24px;
+  top: 0;
+  transform: translateY(25%);
 }
 /* Hero*/
 .hero {
@@ -328,11 +325,13 @@ ul {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
+  max-height: 50px;
   line-height: 1.8;
   display: inline-block;
   align-items: center;
   cursor: pointer;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 32px;
   min-width: 200px;
   border: 1px solid transparent;
@@ -547,6 +546,7 @@ ul {
   height: 18px;
 }
 .modal-title {
+  font-weight: 700;
   margin: 0;
   font-size: 20px;
   line-height: 1.15;
@@ -570,12 +570,14 @@ ul {
   height: 18px;
 }
 .form-group label {
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.2;
   color: var(--primary-text-color);
 }
 .form-group input {
   position: relative;
+  width: 100%;
   height: 40px;
   padding-left: 42px;
 }
@@ -585,7 +587,13 @@ ul {
   box-sizing: border-box;
   border-radius: 4px;
 }
-.form-group:focus-within > .form-icon {
+input:hover,
+input:focus {
+  border: 1px solid #2196f3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.input-group-absolut:focus-within {
   fill: var(--accent-color);
 }
 .form-group textarea {
@@ -602,36 +610,23 @@ ul {
   line-height: 1.8;
   color: var(--primary-text-color);
 }
-.checkbox {
-}
 .checkbox-icon {
   fill: #188ce8;
+}
+.checkbox {
+  --webkit-appearance: none;
+  --moz-appearance: none;
+  appearance: none;
 }
 .form-btn {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.btn-send {
-  width: 200px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  align-items: center;
-  text-align: center;
-  color: var(--whitе-color-text);
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.btn-send:hover {
-  background: var(--hover-button);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
 textarea {
   resize: none;
 }
-.icon-close:hover {
+.button-close:hover {
   fill: var(--accent-color);
 }
 /* портфолио*/
