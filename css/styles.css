@@ -253,8 +253,8 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-.e-mail-box label {
-  padding: 0;
+.e-mail-box p {
+  margin: 0;
   height: 16px;
   font-weight: 700;
   font-size: 14px;
@@ -541,6 +541,7 @@ input {
   margin: 8px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  background-color: transparent;
   cursor: pointer;
   transition: fill 250ms var(--timing-function);
 }
@@ -588,22 +589,23 @@ input {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-}
-.input-group-absolute {
-  position: relative;
   transition: border 250ms var(--timing-function),
     fill 250ms var(--timing-function);
 }
-.input-group-absolute:hover,
-.input-group-absolut:focus {
-  border: 1px solid #2196f3;
-  box-sizing: border-box;
-  border-radius: 4px;
+.input-group-absolute {
+  position: relative;
+}
+.form-group input:hover,
+.form-group input:focus {
+  border: 1px solid var(--accent-color);
+}
+.form-group input:hover + .form-icon,
+.form-group input:focus + .form-icon {
   fill: var(--accent-color);
 }
-.input-group-absolute:focus-within {
+.form-group input:focus-within {
   fill: var(--accent-color);
-  border: 1px solid #2196f3;
+  border: 1px solid var(--accent-color);
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -616,7 +618,12 @@ textarea {
 }
 textarea:hover,
 textarea:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--accent-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.form-group textarea:focus-within {
+  border: 1px solid var(--accent-color);
   box-sizing: border-box;
   border-radius: 4px;
 }
