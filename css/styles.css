@@ -253,8 +253,9 @@ ul {
   display: flex;
   justify-content: space-between;
 }
-.e-mail-box p {
+.footer-disription {
   margin: 0;
+  margin-bottom: 20px;
   height: 16px;
   font-weight: 700;
   font-size: 14px;
@@ -265,7 +266,6 @@ ul {
 }
 .e-mail-box input {
   margin-left: 0;
-  margin-top: 20px;
   padding: 8px;
   display: flex;
   width: 358px;
@@ -280,7 +280,6 @@ ul {
 .e-mail-box button {
   display: flex;
   align-items: center;
-  margin-top: 20px;
   margin-left: 10px;
 }
 .icon-send {
@@ -572,6 +571,7 @@ input {
   left: 10px;
   width: 18px;
   height: 18px;
+  transition: fill 250ms var(--timing-function);
 }
 .form-group label {
   margin-bottom: 4px;
