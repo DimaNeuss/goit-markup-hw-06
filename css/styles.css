@@ -98,13 +98,15 @@ ul {
   line-height: 1.2;
   text-decoration: none;
 }
+.header-logo {
+  margin-right: 93px;
+}
 .logo-header {
   color: var(--text-color);
 }
 .logo-footer {
   color: var(--whitе-color-text);
 }
-
 /* sete nav*/
 
 .nav-link {
@@ -140,7 +142,6 @@ ul {
 /* позиционирование nav */
 .site-nav {
   display: flex;
-  margin-left: 93px;
 }
 
 .site-nav-margin:not(:first-child) {
@@ -171,7 +172,7 @@ ul {
   margin-left: auto;
   align-items: center;
 }
-.contacts .contacts-link:not(:first-child) {
+.contacts .contacts-links:not(:first-child) {
   margin-left: 50px;
 }
 .icon-contacts {
@@ -187,7 +188,6 @@ ul {
   font-size: 14px;
   font-style: normal;
   line-height: 1.8;
-  margin-top: 9px;
   display: inline-block;
   transition: color 250ms var(--timing-function);
 }
@@ -205,7 +205,7 @@ ul {
 
 .footer-box {
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .social {
   margin-left: 70px;
@@ -221,6 +221,7 @@ ul {
 }
 .footer-link {
   display: flex;
+  margin-top: 20px;
 }
 .footer-link-icon:not(:last-child) {
   margin-right: 10px;
