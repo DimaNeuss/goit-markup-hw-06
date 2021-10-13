@@ -568,8 +568,8 @@ input {
 }
 .form-icon {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 12px;
+  left: 12px;
   width: 18px;
   height: 18px;
   transition: fill 250ms var(--timing-function);
@@ -616,6 +616,7 @@ textarea {
   line-height: 1.2;
   color: var(--primary-text-color);
   transition: border 250ms var(--timing-function);
+  margin-bottom: 20px;
 }
 textarea:hover,
 textarea:focus {
@@ -629,7 +630,8 @@ textarea:focus {
   border-radius: 4px;
 }
 .form-checkbox {
-  margin: 20px 0 30px 12px;
+  margin-bottom: 30px;
+  padding-left: 12px;
 }
 .form-checkbox label {
   display: inline-block;
@@ -637,6 +639,9 @@ textarea:focus {
   line-height: 1.8;
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
+}
+.form-checkbox a {
+  color: var(--accent-color);
 }
 .checkbox {
   -webkit-appearance: none;
